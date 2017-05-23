@@ -1,4 +1,12 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/Opensans.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
 body {
+  font-family: OpenSans, sans-serif;
   background-color: #f9f9f9;
   width: 1320px;
   height: 950px;
@@ -8,7 +16,6 @@ body {
   background-color: #ffffff;
   margin: 0 150px;
   height: 950px;
-  text-align: center;
   box-shadow: 0px 0px 4px 0px #dbdbdb;
 }
 
@@ -17,6 +24,8 @@ body {
   padding: 50px 0 41px 48px;
 }
 
+/* Меню header */
+
 .link{
   height: 40px;
   margin: 0 46px;
@@ -24,14 +33,13 @@ body {
 }
 
 .menu{
-  margin: 14px 25px;
-  text-align: center;
-  font-size: 11px;
+  font-size: 16px;
   color: #ffffff;
-  /*text-align: center;*/
+  text-shadow: 1px 1px 2px black;
 }
 
 .menu_item_1{
+  padding-left: 25px;
   height: 40px;
   width: 145px;
   line-height: 40px;
@@ -39,23 +47,64 @@ body {
   text-align: left;
 }
 
+.menu_item_1:hover{
+  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+  border: 0 1px;
+  border-color: #838383;
+}
+
 .menu_item_2{
   height: 40px;
   width: 100px;
   line-height: 40px;
   display: inline-block;
+  text-align: center;
 }
 
+.menu_item_2:hover{
+  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+  border: 0 1px;
+  border-color: #838383;
+
+}
 .menu_item_3{
   height: 40px;
-  width: 145px;
+  width: 170px;
   line-height: 40px;
   display: inline-block;
+  text-align: center;
 }
 
+.menu_item_3:hover{
+  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+  border: 0 1px;
+  border-color: #838383;
+
+}
 .menu_item_4{
   height: 40px;
-  width: 145px;
+  width: 110px;
   line-height: 40px;
   display: inline-block;
+  text-align: center;
 }
+
+.menu_item_4:hover{
+  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+  border: 0 1px;
+  border-color: #838383;
+}
+
+/* Левое меню */
+
+.box_menu{
+  border: 6px;
+  border-color: black;
+}
+
+.left_menu{
+  font-size: 16px;
+  color: #656363;
+  margin-top: 40px;
+  margin-left: 46px;
+  border: 6px;
