@@ -34,23 +34,22 @@ body {
 
 .menu{
   font-size: 16px;
-  color: #ffffff;
   text-shadow: 1px 1px 2px black;
+}
+
+.menu a{
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 40px;
+  display: block;
 }
 
 .menu_item_1{
   padding-left: 25px;
   height: 40px;
   width: 145px;
-  line-height: 40px;
   display: inline-block;
   text-align: left;
-}
-
-.menu_item_1:hover{
-  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-  border: 0 1px;
-  border-color: #838383;
 }
 
 .menu_item_2{
@@ -61,12 +60,6 @@ body {
   text-align: center;
 }
 
-.menu_item_2:hover{
-  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-  border: 0 1px;
-  border-color: #838383;
-
-}
 .menu_item_3{
   height: 40px;
   width: 170px;
@@ -75,12 +68,6 @@ body {
   text-align: center;
 }
 
-.menu_item_3:hover{
-  background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-  border: 0 1px;
-  border-color: #838383;
-
-}
 .menu_item_4{
   height: 40px;
   width: 110px;
@@ -89,22 +76,46 @@ body {
   text-align: center;
 }
 
-.menu_item_4:hover{
+.menu li:hover{
   background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-  border: 0 1px;
-  border-color: #838383;
+  border-left: 1px solid #838383;
+  border-right: 1px solid #838383;
+  margin: -1px;
 }
 
 /* Левое меню */
 
 .box_menu{
-  border: 6px;
-  border-color: black;
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  margin-left: 46px;
+  margin-top: 40px;
 }
 
 .left_menu{
   font-size: 16px;
+}
+
+.left_menu li{
+  display: block;
+  line-height: 40px;
+  width: 240px;
+  border: 1px solid #c8c8c8;
+}
+
+.left_menu li:hover{
+  background-color: #f9f9f9;
+}
+
+.left_menu a{
+  display: block;
+  text-decoration: none;
   color: #656363;
-  margin-top: 40px;
-  margin-left: 46px;
-  border: 6px;
+  margin-left: 24px;
+}
+
+.left_menu a:hover{
+  margin-left: 36px;
+  color: #2c2c2c;
+}
